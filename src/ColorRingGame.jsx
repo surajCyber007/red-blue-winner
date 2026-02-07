@@ -205,7 +205,7 @@ export default function ColorRingGame() {
 
         /* ================= RENDER ================= */
         function drawScoreBalls(x, y, color, score) {
-            const MAX = 5;
+            const MAX = 3;
             const R = 10;
             const GAP = 24;
 
@@ -228,7 +228,8 @@ export default function ColorRingGame() {
         }
 
         function render() {
-            ctx.clearRect(0, 0, WIDTH, HEIGHT);
+            ctx.fillStyle = "#0f172a"; // dark blue / slate
+            ctx.fillRect(0, 0, WIDTH, HEIGHT);
 
             /* 🏷️ TITLE */
             ctx.fillStyle = "#ffffff";
