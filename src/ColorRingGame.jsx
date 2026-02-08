@@ -50,7 +50,7 @@ export default function ColorRingGame() {
         const BALL_RADIUS = 6;
         const GRAVITY = 1200;
         const ROUND_LIMIT = 1000;
-        const WIN_SCORE = 5;
+        const WIN_SCORE = 3;
 
         /* ================= TIMING ================= */
         const FIXED_DT = 1 / 60;
@@ -236,7 +236,7 @@ export default function ColorRingGame() {
             ctx.font = "bold 30px Arial";
             ctx.textAlign = "center";
             ctx.fillText(
-                "Select your ball and see who wins",
+                "Can your ball win the match?",
                 WIDTH / 2,
                 30
             );
